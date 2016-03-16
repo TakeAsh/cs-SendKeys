@@ -2,11 +2,46 @@
     x:Class="SendKeys.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="MainWindow"
-    Width="640" Height="480"
+    Title="Send Keys"
+    Width="640" Height="480" MinWidth="320" MinHeight="240"
     FontFamily="Noto Sans JP">
 
     <DockPanel>
-        
+        <DockPanel
+            DockPanel.Dock="Top">
+            <Button
+                x:Name="button_Send"
+                DockPanel.Dock="Left"
+                Content="Send"
+                IsDefault="True"
+                Click="button_Send_Click" />
+            <Button
+                x:Name="button_Cancel"
+                DockPanel.Dock="Left"
+                Content="Cancel"
+                IsEnabled="False"
+                Click="button_Cancel_Click" />
+            <ProgressBar
+                x:Name="progressBar" />
+        </DockPanel>
+        <WrapPanel
+            x:Name="panel_FunctionKeys"
+            DockPanel.Dock="Top">
+            <Button
+                Content="SHIFT"
+                Click="button_FunctionKey_Click" />
+            <Button
+                Content="CTRL"
+                Click="button_FunctionKey_Click" />
+            <Button
+                Content="ALT"
+                Click="button_FunctionKey_Click" />
+        </WrapPanel>
+        <TextBox
+            x:Name="textBox_Text"
+            AcceptsReturn="True"
+            AcceptsTab="True"
+            TextWrapping="Wrap"
+            Text="%{PRTSC}" />
     </DockPanel>
 </Window>

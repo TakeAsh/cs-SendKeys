@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="_Keys" xml:space="preserve">
+    <value>BACKSPACE BREAK CAPSLOCK DELETE DOWN END ENTER ESC HELP HOME INSERT LEFT NUMLOCK PGDN PGUP PRTSC RIGHT SCROLLLOCK TAB UP F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 ADD SUBTRACT MULTIPLY DIVIDE</value>
+  </data>
 </root>

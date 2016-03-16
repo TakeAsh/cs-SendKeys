@@ -10,8 +10,8 @@
 
 namespace SendKeys.Properties {
     using System;
-
-
+    
+    
     /// <summary>
     ///   ローカライズされた文字列などを検索するための、厳密に型指定されたリソース クラスです。
     /// </summary>
@@ -23,15 +23,15 @@ namespace SendKeys.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
-
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-
+        
         /// <summary>
         ///   このクラスで使用されているキャッシュされた ResourceManager インスタンスを返します。
         /// </summary>
@@ -45,7 +45,7 @@ namespace SendKeys.Properties {
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   厳密に型指定されたこのリソース クラスを使用して、すべての検索リソースに対し、
         ///   現在のスレッドの CurrentUICulture プロパティをオーバーライドします。
@@ -57,6 +57,15 @@ namespace SendKeys.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   BACKSPACE BREAK CAPSLOCK DELETE DOWN END ENTER ESC HELP HOME INSERT LEFT NUMLOCK PGDN PGUP PRTSC RIGHT SCROLLLOCK TAB UP F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11 F12 F13 F14 F15 F16 ADD SUBTRACT MULTIPLY DIVIDE に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string _Keys {
+            get {
+                return ResourceManager.GetString("_Keys", resourceCulture);
             }
         }
     }
