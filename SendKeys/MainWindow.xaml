@@ -37,11 +37,140 @@
                 Content="ALT"
                 Click="button_FunctionKey_Click" />
         </WrapPanel>
+        <Grid
+            DockPanel.Dock="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Text="Load"
+                Grid.Row="0" Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" />
+            <Button
+                x:Name="button_LoadMacro0"
+                Grid.Row="0" Grid.Column="1"
+                Content="M0"
+                Click="button_LoadMacro_Click" />
+            <Button
+                x:Name="button_LoadMacro1"
+                Grid.Row="0" Grid.Column="2"
+                Content="M1"
+                Click="button_LoadMacro_Click" />
+            <Button
+                x:Name="button_LoadMacro2"
+                Grid.Row="0" Grid.Column="3"
+                Content="M2"
+                Click="button_LoadMacro_Click" />
+            <Button
+                x:Name="button_LoadMacro3"
+                Grid.Row="0" Grid.Column="4"
+                Content="M3"
+                Click="button_LoadMacro_Click" />
+            <Button
+                x:Name="button_LoadMacro4"
+                Grid.Row="0" Grid.Column="5"
+                Content="M4"
+                Click="button_LoadMacro_Click" />
+            <Button
+                x:Name="button_LoadMacro5"
+                Grid.Row="0" Grid.Column="6"
+                Content="M5"
+                Click="button_LoadMacro_Click" />
+            <Button
+                x:Name="button_LoadMacro6"
+                Grid.Row="0" Grid.Column="7"
+                Content="M6"
+                Click="button_LoadMacro_Click" />
+            <Button
+                x:Name="button_LoadMacro7"
+                Grid.Row="0" Grid.Column="8"
+                Content="M7"
+                Click="button_LoadMacro_Click" />
+            <Button
+                x:Name="button_LoadMacro8"
+                Grid.Row="0" Grid.Column="9"
+                Content="M8"
+                Click="button_LoadMacro_Click" />
+            <Button
+                x:Name="button_LoadMacro9"
+                Grid.Row="0" Grid.Column="10"
+                Content="M9"
+                Click="button_LoadMacro_Click" />
+            <TextBlock
+                Text="Save"
+                Grid.Row="1" Grid.Column="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" />
+            <Button
+                x:Name="button_SaveMacro0"
+                Grid.Row="1" Grid.Column="1"
+                Content="M0"
+                Click="button_SaveMacro_Click" />
+            <Button
+                x:Name="button_SaveMacro1"
+                Grid.Row="1" Grid.Column="2"
+                Content="M1"
+                Click="button_SaveMacro_Click" />
+            <Button
+                x:Name="button_SaveMacro2"
+                Grid.Row="1" Grid.Column="3"
+                Content="M2"
+                Click="button_SaveMacro_Click" />
+            <Button
+                x:Name="button_SaveMacro3"
+                Grid.Row="1" Grid.Column="4"
+                Content="M3"
+                Click="button_SaveMacro_Click" />
+            <Button
+                x:Name="button_SaveMacro4"
+                Grid.Row="1" Grid.Column="5"
+                Content="M4"
+                Click="button_SaveMacro_Click" />
+            <Button
+                x:Name="button_SaveMacro5"
+                Grid.Row="1" Grid.Column="6"
+                Content="M5"
+                Click="button_SaveMacro_Click" />
+            <Button
+                x:Name="button_SaveMacro6"
+                Grid.Row="1" Grid.Column="7"
+                Content="M6"
+                Click="button_SaveMacro_Click" />
+            <Button
+                x:Name="button_SaveMacro7"
+                Grid.Row="1" Grid.Column="8"
+                Content="M7"
+                Click="button_SaveMacro_Click" />
+            <Button
+                x:Name="button_SaveMacro8"
+                Grid.Row="1" Grid.Column="9"
+                Content="M8"
+                Click="button_SaveMacro_Click" />
+            <Button
+                x:Name="button_SaveMacro9"
+                Grid.Row="1" Grid.Column="10"
+                Content="M9"
+                Click="button_SaveMacro_Click" />
+        </Grid>
         <TextBox
             x:Name="textBox_Text"
             AcceptsReturn="True"
             AcceptsTab="True"
-            TextWrapping="Wrap"
-            Text="%{PRTSC}" />
+            TextWrapping="Wrap" />
     </DockPanel>
 </Window>

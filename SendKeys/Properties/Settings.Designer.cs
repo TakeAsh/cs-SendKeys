@@ -22,5 +22,125 @@ namespace SendKeys.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro0 {
+            get {
+                return ((string)(this["Macro0"]));
+            }
+            set {
+                this["Macro0"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro1 {
+            get {
+                return ((string)(this["Macro1"]));
+            }
+            set {
+                this["Macro1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro2 {
+            get {
+                return ((string)(this["Macro2"]));
+            }
+            set {
+                this["Macro2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro3 {
+            get {
+                return ((string)(this["Macro3"]));
+            }
+            set {
+                this["Macro3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro4 {
+            get {
+                return ((string)(this["Macro4"]));
+            }
+            set {
+                this["Macro4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro5 {
+            get {
+                return ((string)(this["Macro5"]));
+            }
+            set {
+                this["Macro5"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro6 {
+            get {
+                return ((string)(this["Macro6"]));
+            }
+            set {
+                this["Macro6"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro7 {
+            get {
+                return ((string)(this["Macro7"]));
+            }
+            set {
+                this["Macro7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro8 {
+            get {
+                return ((string)(this["Macro8"]));
+            }
+            set {
+                this["Macro8"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Macro9 {
+            get {
+                return ((string)(this["Macro9"]));
+            }
+            set {
+                this["Macro9"] = value;
+            }
+        }
     }
 }
