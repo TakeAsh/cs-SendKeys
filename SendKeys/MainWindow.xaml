@@ -26,6 +26,11 @@
                 Content="Cancel"
                 IsEnabled="False"
                 Click="button_Cancel_Click" />
+            <Button
+                x:Name="button_Clear"
+                DockPanel.Dock="Left"
+                Content="Clear"
+                Click="button_Clear_Click" />
             <ProgressBar
                 x:Name="progressBar" />
         </DockPanel>

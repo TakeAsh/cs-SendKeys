@@ -95,6 +95,10 @@ namespace SendKeys {
             _worker.CancelAsync();
         }
 
+        private void button_Clear_Click(object sender, RoutedEventArgs e) {
+            textBox_Text.Text = null;
+        }
+
         private void button_FunctionKey_Click(object sender, RoutedEventArgs e) {
             var button = sender as Button;
             var value = button.Content as string;
