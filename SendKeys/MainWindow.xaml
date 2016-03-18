@@ -2,10 +2,15 @@
     x:Class="SendKeys.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sk="clr-namespace:SendKeys"
     Title="Send Keys"
     Width="640" Height="480" MinWidth="320" MinHeight="240"
     FontFamily="Noto Sans JP">
 
+    <Window.Resources>
+        <sk:StringToBoolConverter x:Key="StringToBoolConverter" />
+    </Window.Resources>
+    
     <DockPanel>
         <DockPanel
             DockPanel.Dock="Top">
@@ -65,51 +70,61 @@
                 x:Name="button_LoadMacro0"
                 Grid.Row="0" Grid.Column="1"
                 Content="M0"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <Button
                 x:Name="button_LoadMacro1"
                 Grid.Row="0" Grid.Column="2"
                 Content="M1"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <Button
                 x:Name="button_LoadMacro2"
                 Grid.Row="0" Grid.Column="3"
                 Content="M2"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <Button
                 x:Name="button_LoadMacro3"
                 Grid.Row="0" Grid.Column="4"
                 Content="M3"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <Button
                 x:Name="button_LoadMacro4"
                 Grid.Row="0" Grid.Column="5"
                 Content="M4"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <Button
                 x:Name="button_LoadMacro5"
                 Grid.Row="0" Grid.Column="6"
                 Content="M5"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <Button
                 x:Name="button_LoadMacro6"
                 Grid.Row="0" Grid.Column="7"
                 Content="M6"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <Button
                 x:Name="button_LoadMacro7"
                 Grid.Row="0" Grid.Column="8"
                 Content="M7"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <Button
                 x:Name="button_LoadMacro8"
                 Grid.Row="0" Grid.Column="9"
                 Content="M8"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <Button
                 x:Name="button_LoadMacro9"
                 Grid.Row="0" Grid.Column="10"
                 Content="M9"
+                IsEnabled="{Binding RelativeSource={RelativeSource Self}, Path=ToolTip, Converter={StaticResource StringToBoolConverter}}"
                 Click="button_LoadMacro_Click" />
             <TextBlock
                 Text="Save"
