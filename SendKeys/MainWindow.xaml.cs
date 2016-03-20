@@ -24,15 +24,13 @@ namespace SendKeys {
     public partial class MainWindow :
         Window {
 
-        const int WaitSeconds = 10;
-
         private static Properties.Settings _settings = Properties.Settings.Default;
 
+        private int _waitSeconds;
         private BackgroundWorker _worker;
 
         public MainWindow() {
             InitializeComponent();
-            progressBar.Maximum = WaitSeconds;
             foreach (var key in _resources._Keys.Split()) {
                 var button = new Button() {
                     Content = key,
@@ -46,7 +44,7 @@ namespace SendKeys {
             };
             _worker.DoWork += (sender, e) => {
                 var worker = sender as BackgroundWorker;
-                var wait = WaitSeconds;
+                var wait = _waitSeconds;
                 while (wait > 0) {
                     if (worker.CancellationPending) {
                         return;
@@ -57,6 +55,7 @@ namespace SendKeys {
             };
             _worker.ProgressChanged += (sender, e) => {
                 progressBar.Value = e.ProgressPercentage;
+                label_Progress.Text = e.ProgressPercentage.ToString();
             };
             _worker.RunWorkerCompleted += (sender, e) => {
                 if (!e.Cancelled) {
@@ -66,7 +65,18 @@ namespace SendKeys {
                 button_Cancel.IsEnabled = false;
                 textBox_Text.IsEnabled = true;
                 progressBar.Value = 0;
+                label_Progress.Text = null;
             };
+            var waits = _settings.Waits
+                .Split()
+                .Select(item => Convert.ToInt32(item))
+                .ToList();
+            comboBox_Wait.ItemsSource = waits;
+            var waitIndex = waits.IndexOf(_settings.DefaultWait);
+            if (waitIndex < 0) {
+                waitIndex = 0;
+            }
+            comboBox_Wait.SelectedIndex = waitIndex;
             button_LoadMacro0.ToolTip = _settings.Macro0;
             button_LoadMacro1.ToolTip = _settings.Macro1;
             button_LoadMacro2.ToolTip = _settings.Macro2;
@@ -84,6 +94,7 @@ namespace SendKeys {
             button_Send.IsEnabled = false;
             button_Cancel.IsEnabled = true;
             textBox_Text.IsEnabled = false;
+            progressBar.Maximum = _waitSeconds = (int)comboBox_Wait.SelectedItem;
             _worker.RunWorkerAsync();
         }
 

@@ -25,6 +25,30 @@ namespace SendKeys.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("3 5 10 20 30 60")]
+        public string Waits {
+            get {
+                return ((string)(this["Waits"]));
+            }
+            set {
+                this["Waits"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
+        public int DefaultWait {
+            get {
+                return ((int)(this["DefaultWait"]));
+            }
+            set {
+                this["DefaultWait"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string Macro0 {
             get {

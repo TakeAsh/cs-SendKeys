@@ -31,8 +31,17 @@
                 DockPanel.Dock="Left"
                 Content="Clear"
                 Click="button_Clear_Click" />
-            <ProgressBar
-                x:Name="progressBar" />
+            <ComboBox
+                x:Name="comboBox_Wait"
+                ToolTip="Wait(sec)" />
+            <Grid>
+                <ProgressBar
+                    x:Name="progressBar" />
+                <TextBlock
+                    x:Name="label_Progress"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" />
+            </Grid>
         </DockPanel>
         <WrapPanel
             x:Name="panel_FunctionKeys"

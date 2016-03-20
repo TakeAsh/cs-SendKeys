@@ -2,6 +2,12 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SendKeys.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
+    <Setting Name="Waits" Type="System.String" Scope="User">
+      <Value Profile="(Default)">3 5 10 20 30 60</Value>
+    </Setting>
+    <Setting Name="DefaultWait" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
     <Setting Name="Macro0" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
