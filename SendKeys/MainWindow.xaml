@@ -5,7 +5,8 @@
     xmlns:sk="clr-namespace:SendKeys"
     Title="Send Keys"
     Width="640" Height="480" MinWidth="320" MinHeight="240"
-    FontFamily="Noto Sans JP">
+    FontFamily="Noto Sans JP"
+    Icon="/SendKeys;component/SendKeys.ico">
 
     <Window.Resources>
         <sk:StringToBoolConverter x:Key="StringToBoolConverter" />
